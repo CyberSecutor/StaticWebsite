@@ -2,9 +2,6 @@
 
 Welcome to this awesome website.
 
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/9cQgQIMlwWw"
-    frameborder="0"
-    allowfullscreen></iframe>
+![Box plot](https://imgs.xkcd.com/comics/box_plot.png)
+
+> You have to be careful doing this. Sometimes, when you push the whisker down, dynamite explodes.
