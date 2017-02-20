@@ -23,7 +23,7 @@
       "vendor/bin/preach -f",
       "xdg-open index.html &",
       "composer init",
-      "composer require-dev zero-config/preacher:^2.1.0"
+      "composer require --dev zero-config/preacher:^2.1.0"
     ]
   }
 }
