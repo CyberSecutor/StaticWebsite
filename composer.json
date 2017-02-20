@@ -1,0 +1,23 @@
+{
+  "name": "zero-config/static-website",
+  "type": "project",
+  "description": "Create a new static website.",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jan-Marten de Boer",
+      "email": "github@johmanx.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require-dev": {
+    "zero-config/preacher": "^2.1.0"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "test -h .git/hooks/post-commit || ln -s ../../vendor/bin/preach .git/hooks/post-commit",
+      "vendor/bin/preach -f"
+    ]
+  }
+}
