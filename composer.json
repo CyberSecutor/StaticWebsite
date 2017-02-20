@@ -16,11 +16,14 @@
   },
   "scripts": {
     "post-create-project-cmd": [
+      "rm -f README.md",
       "test -d .git || git init",
       "test -h .git/hooks/post-commit || test -d .git/hooks && ln -s ../../vendor/bin/preach .git/hooks/post-commit",
       "git add .; git commit -am 'Finished installation.'",
       "vendor/bin/preach -f",
-      "xdg-open index.html"
+      "xdg-open index.html &",
+      "composer init",
+      "composer require-dev zero-config/preacher:^2.1.0"
     ]
   }
 }
