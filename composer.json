@@ -18,6 +18,7 @@
     "post-create-project-cmd": [
       "test -d .git || git init",
       "test -h .git/hooks/post-commit || test -d .git/hooks && ln -s ../../vendor/bin/preach .git/hooks/post-commit",
+      "git add .; git commit -am 'Finished installation.'",
       "vendor/bin/preach -f",
       "xdg-open index.html"
     ]
