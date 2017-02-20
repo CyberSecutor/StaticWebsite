@@ -16,6 +16,7 @@
   },
   "scripts": {
     "post-create-project-cmd": [
+      "test -d .git || git init",
       "test -h .git/hooks/post-commit || test -d .git/hooks && ln -s ../../vendor/bin/preach .git/hooks/post-commit",
       "vendor/bin/preach -f",
       "xdg-open index.html"
