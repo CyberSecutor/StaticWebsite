@@ -12,7 +12,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require-dev": {
-    "zero-config/preacher": "^2.1.0"
+    "zero-config/preacher": "^3.0.0"
   },
   "scripts": {
     "post-create-project-cmd": [
